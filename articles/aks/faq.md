@@ -81,7 +81,8 @@ As you work with the node resource group, keep in mind that you cannot:
 
 ## Can I modify tags and other properties of the AKS resources in the node resource group?
 
-If you modify or delete Azure-created tags and other resource properties in the node resource group, you could get unexpected results such as scaling and upgrading errors. AKS allows you to create and modify custom tags. You might want to create or modify custom tags, for example, to assign a business unit or cost center. By modifying the resources under the node resource group in the AKS cluster, you break the service-level objective (SLO). For more information, see [Does AKS offer a service-level agreement?](#does-aks-offer-a-service-level-agreement)
+Creating and modifying your own custom tags on the resources (VMs, storage account, etc) within the node resource group (MC_) is supported but modifying the Azure-created tags is not.
+If you modify or delete Azure-created tags and other resource properties in the node resource group, you could get unexpected results such as scaling and upgrading errors. You might want to create or modify custom tags, for example, to assign a business unit or cost center. By modifying the resources under the node resource group in the AKS cluster, you break the service-level objective (SLO). For more information, see [Does AKS offer a service-level agreement?](#does-aks-offer-a-service-level-agreement)
 
 ## What Kubernetes admission controllers does AKS support? Can admission controllers be added or removed?
 
