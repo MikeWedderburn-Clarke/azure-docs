@@ -50,7 +50,7 @@ Location changes | You can change the cache location by stopping the backup engi
 ## Supported operating systems
 
 >[!NOTE]
-> The MARS agent does not support Windows Server Core SKUs.
+> The GUI does not work on Windows Server Core SKUs but you can use the method mentioned in this Automation article to backup Server Core: https://docs.microsoft.com/en-us/azure/backup/backup-client-automation
 
 You can use the MARS agent to back up directly to Azure on the operating systems listed below that run on:
 
